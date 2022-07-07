@@ -1,7 +1,8 @@
 //import packages
 import { useState, useContext } from "react";
 
-import { Modal, Button } from "react-bootstrap";
+import { TbTrashOff } from "react-icons/tb";
+import { Modal, Button, Container, Row, Col } from "react-bootstrap";
 
 // import the context which we created in the authContext.js using the Context hook
 import { BadgeContext } from "../../Contexts/BadgeFavContext";
@@ -39,51 +40,79 @@ const FavoritesList = () => {
 
   return (
     <>
-      {movieList?.length ? (
-        <>
-          {movieList.map((element, index) => {
-            return (
-              <div key={index}>
-                <img src={element.image} alt="Favorite Image" />
-                <button
+      <div className="favorites-list">
+        {movieList?.length ? (
+          <>
+            <div className="favorites-grid">
+              <Container>
+                <Row className="justify-content-md-center">
+                  {movieList.map((element, index) => {
+                    return (
+                      // <div key={index}>
+                      <Col xs={"auto"} key={index}>
+                        <div className="faveolate-card">
+                          <div>
+                            <img
+                              src={element.image}
+                              alt="Favorite Image"
+                              className="fave-img"
+                            />
+                          </div>
+
+                          <div>
+                            <TbTrashOff
+                              className="remove-icon"
+                              onClick={() => {
+                                setMovieId(element.id);
+                                handleShowRemoveModal();
+                              }}
+                            />
+                            {/* <button
+                              onClick={() => {
+                                setMovieId(element.id);
+                                handleShowRemoveModal();
+                              }}
+                            >
+                              remove from favorites
+                            </button> */}
+                          </div>
+                        </div>
+                      </Col>
+                      // {/* </div> */}
+                    );
+                  })}
+                </Row>
+              </Container>
+            </div>
+
+            {/* the remove from Favorites Modal */}
+            <Modal show={removeFromFavModal} onHide={handleCloseRemoveModal}>
+              <Modal.Header closeButton>
+                <Modal.Title>Remove From Favorite</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                Are you sure you want to remove this movie from favorite list ?
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleCloseRemoveModal}>
+                  Close
+                </Button>
+                <Button
+                  variant="primary"
                   onClick={() => {
-                    setMovieId(element.id);
-                    handleShowRemoveModal();
+                    handleCloseRemoveModal();
+                    removeFromFavFunc(movieId);
                   }}
                 >
-                  remove from favorites
-                </button>
-              </div>
-            );
-          })}
-
-          {/* the remove from Favorites Modal */}
-          <Modal show={removeFromFavModal} onHide={handleCloseRemoveModal}>
-            <Modal.Header closeButton>
-              <Modal.Title>Remove From Favorite</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              Are you sure you want to remove this movie from favorite list ?
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={handleCloseRemoveModal}>
-                Close
-              </Button>
-              <Button
-                variant="primary"
-                onClick={() => {
-                  handleCloseRemoveModal();
-                  removeFromFavFunc(movieId);
-                }}
-              >
-                Remove Movie
-              </Button>
-            </Modal.Footer>
-          </Modal>
-        </>
-      ) : (
-        <p>there is no favorites</p>
-      )}
+                  Remove Movie
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </>
+        ) : (
+          <p>there is no favorites</p>
+        )}
+      </div>
     </>
   );
 };

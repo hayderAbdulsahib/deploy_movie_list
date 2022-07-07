@@ -11,7 +11,7 @@ const ActorsList = (props) => {
   const { image, name, character } = props;
 
   return (
-    <Col xs={"auto"}>
+    <Col xs={4}>
       <div className="single-actor">
         <div className="single-actor-card">
           {image ? (
