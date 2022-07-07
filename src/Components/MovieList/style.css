@@ -1,0 +1,77 @@
+.movie-list .movie-first-background-img {
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.movie-list .background-img-info {
+  color: white;
+
+  max-width: 700px;
+
+  margin-left: 180px;
+  margin-top: 150px;
+}
+
+.movie-list .background-img-info h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 48px;
+  color: white;
+  font-weight: 900;
+}
+
+.movie-list .background-img-info p {
+  font-family: "Abel", sans-serif;
+  font-size: 22px;
+  color: white;
+}
+
+.movie-list .loading-flex {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+}
+
+.movie-list .load-more-btn {
+  /* display: flex;
+  justify-content: center; */
+  width: 300px;
+  height: 60px;
+  border-radius: 20px;
+
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.movie-list .load-more-btn:hover {
+  background-color: #353535;
+  border-color: #353535;
+}
+
+.movie-list-center-loader {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  height: 85vh;
+}
+
+.movie-list .movie-pagination-center-loader {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+}
+
+@media all and (max-width: 1200px) {
+  .movie-list .background-img-info {
+    margin-left: 20px;
+  }
+}

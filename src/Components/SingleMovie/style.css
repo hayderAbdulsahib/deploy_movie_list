@@ -1,0 +1,24 @@
+.Single-movie .movie-image {
+  /* width: 200px; */
+  /* height: 300px; */
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+@media all and (max-width: 1200px) {
+  .Single-movie .movie-image {
+    border-radius: 1rem;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .Single-movie .movie-image {
+    border-radius: 0.6rem;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .Single-movie .movie-image {
+    border-radius: 0.4rem;
+  }
+}

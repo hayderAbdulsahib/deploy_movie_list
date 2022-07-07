@@ -1,0 +1,38 @@
+.single-actor .single-actor-card {
+  width: 225px;
+  min-height: 320px;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 20px;
+  background: rgb(28, 28, 28);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-actor .actor-image {
+  width: 100%;
+  height: 225px;
+  border-radius: 20px;
+}
+
+.single-actor .image-not-found {
+  width: 100%;
+  height: 225px;
+  border-radius: 20px;
+}
+
+.single-actor .actor-name {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.single-actor .actor-role {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  color: white;
+  margin: 0px;
+}

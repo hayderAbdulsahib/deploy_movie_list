@@ -1,0 +1,32 @@
+.search-component {
+  margin-top: 50px;
+}
+
+.search-component .loading-flex {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+}
+
+.search-component .load-more-search-btn {
+  width: 300px;
+  height: 60px;
+  border-radius: 20px;
+
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.search-component .load-more-search-btn:hover {
+  background-color: #353535;
+  border-color: #353535;
+}
+
+.search-component .search-center-loader {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+}

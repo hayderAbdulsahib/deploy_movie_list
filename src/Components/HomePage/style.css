@@ -1,0 +1,72 @@
+.home-page .search-container {
+  height: 150px;
+  background-color: rgb(28, 28, 28);
+}
+
+.home-page .search-navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+
+.home-page .search-input-flex {
+  display: flex;
+  align-items: center;
+  background-color: rgb(53, 53, 53);
+  border-radius: 20px;
+  width: 700px;
+  padding: 0px 15px;
+}
+
+.home-page .input-search {
+  width: 100%;
+  border-radius: 0px 20px 20px 0px;
+  border: none;
+  outline: none;
+  background-color: rgb(53, 53, 53);
+  padding-left: 10px;
+  color: #757575;
+}
+
+.home-page .input-search:focus {
+  color: #757575;
+}
+
+.home-page .search-icon {
+  color: white;
+  font-size: 20px;
+}
+
+/* styling the drop down */
+.home-page .drop-down-search-container {
+  width: 250px;
+}
+
+.home-page .drop-down-search {
+  background-color: rgb(53, 53, 53);
+  border: none;
+  color: #757575;
+  width: 100%;
+}
+
+.home-page .drop-down-search:focus {
+  outline: none;
+}
+
+.home-page option {
+  color: #757575;
+}
+
+@media all and (max-width: 700px) {
+  .home-page .drop-down-search {
+    width: 180px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .home-page .drop-down-search {
+    width: 170px;
+  }
+}

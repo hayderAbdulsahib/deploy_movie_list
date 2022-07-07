@@ -1,0 +1,33 @@
+.single-genre {
+  width: 225px;
+  min-height: 320px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 50px;
+  background-color: black;
+}
+
+.single-genre h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.single-genre a {
+  text-decoration: none;
+  color: white;
+}
+
+.single-genre a:hover {
+  color: #757575;
+}
+
+@media all and (max-width: 950px) {
+  .single-genre {
+    width: 150px;
+    min-height: 250px;
+  }
+}

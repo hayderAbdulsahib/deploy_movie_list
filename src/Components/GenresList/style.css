@@ -1,0 +1,28 @@
+.genres-list .genres-list-container {
+  width: 90vw;
+  margin: 0px auto;
+}
+
+.genres-list .genres-list-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.genres-list .genres-list-flex p {
+  font-family: "Abel", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.genres-list .row > * {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.genre-list-center-loader {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  height: 90vh;
+}

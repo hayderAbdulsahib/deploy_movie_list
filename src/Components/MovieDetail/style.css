@@ -1,0 +1,188 @@
+.main-title-background {
+  background-color: rgb(53, 53, 53);
+}
+
+.movie-detail .main-title {
+  display: flex;
+  align-items: center;
+
+  height: 70px;
+  margin: 0px auto;
+
+  max-width: 1280px;
+  padding: 0px;
+}
+
+.movie-detail .main-title p {
+  font-family: "Abel", sans-serif;
+  font-size: 22px;
+  color: white;
+  margin: 0px;
+}
+
+.movie-detail .main-title a {
+  font-family: "Abel", sans-serif;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+.movie-card-background-img {
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.movie-detail .center-movie-card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 500px;
+}
+
+.movie-detail .movie-card {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  max-width: 1280px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.movie-detail .movie-card img {
+  width: 300px;
+  min-height: 450px;
+  border-radius: 20px;
+}
+
+.movie-detail .movie-main-info {
+  padding: 0px 40px;
+  color: white;
+}
+
+.movie-detail .movie-main-info h2 {
+  font-family: "Abel", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.movie-detail .movie-plot-title {
+  font-family: "Abel", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.movie-detail .movie-main-info h3 {
+  font-family: "Abel", sans-serif;
+  font-size: 16px;
+}
+
+.movie-detail .movie-popularity-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.movie-detail .movie-rating {
+  color: black;
+  background-color: white;
+  padding: 8px;
+  width: fit-content;
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+.movie-detail .movie-director {
+  align-self: flex-start;
+}
+
+.movie-detail .add-fav-icon {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.movie-detail .remove-fav-icon {
+  color: red;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.movie-detail .movie-extra-info-container {
+  background-color: rgb(28, 28, 28);
+}
+
+.movie-detail .movie-extra-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+
+  margin: 0px auto;
+
+  max-width: 1280px;
+  color: white;
+}
+
+.movie-detail .movie-extra-info p {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  color: white;
+  margin: 0px;
+}
+
+.movie-detail .movie-extra-single-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.movie-detail .movie-extra-icons {
+  font-size: 30px;
+}
+
+.movie-detail .actor-list {
+  /* margin: 20p auto; */
+  /* margin-top: 40px; */
+  margin: 0p auto;
+  width: 100%;
+}
+
+.movie-detail .actor-list h2 {
+  font-family: "Abel", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+
+  /* margin: 30px auto;
+
+  max-width: 1280px; */
+
+  margin-top: 30px;
+}
+
+.movie-detail-center-loader {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  height: 90vh;
+}
+
+@media all and (max-width: 800px) {
+  .movie-detail .movie-card {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .movie-detail .movie-card img {
+    width: 90vw;
+  }
+}
